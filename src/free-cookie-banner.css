@@ -1,0 +1,35 @@
+.cookieConsentContainer {
+	position: fixed;
+	bottom: 5px;
+	left: 0px;
+	z-index: 1030;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	padding-left: 10px;
+	padding-right: 10px;
+	font-size: xx-small;
+}
+
+.cookieConsentContainer button {
+	font-size: xx-small;
+}
+
+#cookieMaske {
+	position: fixed;
+	bottom: 5px;
+	left: 0px;
+	z-index: 1030;
+}
+
+#cookieListe {
+	position: fixed;
+	bottom: 5px;
+	left: 0px;
+	z-index: 1031;
+}
+
+@media only screen and (max-width: 342px) {
+	div#cookieListe {
+		width: 80%;
+	}
+}
