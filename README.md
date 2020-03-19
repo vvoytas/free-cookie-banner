@@ -25,4 +25,4 @@ Put the script free-cookie-banner.js in a header of Your HTML page
 
 Put the HTML Template free-cookie-banner.html anywhere into body of Your Page.
 
-
+# Enjoy
