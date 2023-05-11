@@ -1,35 +1,128 @@
 .cookieConsentContainer {
-	position: fixed;
-	bottom: 5px;
-	left: 0px;
-	z-index: 1030;
-	padding-top: 0px;
-	padding-bottom: 0px;
-	padding-left: 10px;
-	padding-right: 10px;
-	font-size: xx-small;
+     position: fixed;
+     bottom: 5px;
+     left: 0px;
+     z-index: 1030;
+     padding-top:0px;
+     padding-bottom:0px;
+     padding-left:10px;
+     padding-right:10px;
+     font-size: xx-small;
+}
+ .cookieConsentContainer button{
+
+     margin:3px;
+}
+ #cookieMaske{
+     position: fixed;
+     bottom: 5px;
+     left: 0px;
+     z-index: 1030;
+}
+ #cookieListe{
+     position: fixed;
+     top: 15px;
+     left: 0px;
+     z-index: 1031;
+}
+ @media only screen and (max-width: 342px) {
+     div#cookieListe {
+         width:80%;
+    }
+}
+ @media only screen and (max-width: 535px) {
+     .btn {
+         width: auto !important;
+    }
+}
+/* Modal Start */
+ .cookieConsentContainer {
+     position: fixed;
+     bottom: 5px;
+     padding-bottom: 0px;
+     padding-left: 10px;
+     padding-right: 10px;
+     font-size: xx-small;
+     display: block;
+     z-index: 10000;
+     padding-top: 100px;
+     left: 0;
+     top: 0;
+     width: 100%;
+     height: 100%;
+     overflow: auto;
+     background-color: rgba(0,0,0,0.4);
+     text-align: center;
+}
+ #cookieMaske {
+     position: initial;
+     bottom: auto;
+     left: auto;
+     z-index: 10030;
+     background-color: #fefefe;
+     margin: auto;
+     padding: 20px;
+     border: 1px solid #888;
+     width: 94%;
+    /*width:94%;
+     */
+     min-width: 275px;
+}
+ .cookieText {
+     max-height: 300px;
+     overflow-y: scroll;
 }
 
-.cookieConsentContainer button {
-	font-size: xx-small;
+ @media only screen and (min-width: 1400px) {
+     #cookieMaske{
+         font-size: large;
+    }
+     .table-responsive, #btnBackToCookieMaske {
+         font-size: large !important;
+    }
 }
+ @media only screen and (min-width: 2000px) {
+     #cookieMaske .btn {
+         font-size: large;
+    }
+}
+ #cookieListe {
 
-#cookieMaske {
-	position: fixed;
-	bottom: 5px;
-	left: 0px;
-	z-index: 1030;
+     z-index: 10000;
+     min-width: 250px;
+     max-width: 100%;
+     width:100% !important;
+     margin: auto;
 }
-
-#cookieListe {
-	position: fixed;
-	bottom: 5px;
-	left: 0px;
-	z-index: 1031;
+/* Modal Ende */
+ .btn-lg, .btn-group-lg > .btn {
+     padding: 8px 8px !important;
 }
-
-@media only screen and (max-width: 342px) {
-	div#cookieListe {
-		width: 80%;
-	}
+/* 26.08.2022 */
+ #cookieSettings{
+     position: fixed;
+     top: 15px;
+     left: 0px;
+     z-index: 1031;
 }
+ @media only screen and (max-width: 342px) {
+     div#cookieSettings {
+         width:40%;
+    }
+     .cookieText {
+         max-height: 150px;
+    }
+}
+ @media only screen and (min-width: 800px) {
+     #cookieMaske {
+         width:60%;
+    }
+}
+ #cookieSettings {
+     z-index: 10000;
+     min-width: 250px;
+     max-width: 100%;
+     width:100% !important;
+     margin: auto;
+}
+ 
