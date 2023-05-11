@@ -229,3 +229,7 @@
    &nbsp;
    <button id="btnSettingsBackToCookieMaske" type="button" class="btn btn-danger btn-md">&nbsp;Zurück</button>
 </div>
+
+		<p>Cookie-Erlaubnis:&nbsp;<span id="cookie_erlaubt_ja_nein"> keine Angaben</span></p>
+		<p id="apanocookiedelete" class="label label-primary"  onclick="function hi(){ document.cookie.split(';').forEach(function(c) { document.cookie = c.replace(/^ +/, '').replace(/=.*/, '=;expires=' + new Date().toUTCString() + ';path=/;domain=.apano.de'); }); document.cookie.split(';').forEach(function(c) { document.cookie = c.replace(/^ +/, '').replace(/=.*/, '=;expires=' + new Date().toUTCString() + ';path=/'); });   if( $('#cookie_erlaubt_ja_nein').length )    {      $('#cookie_erlaubt_ja_nein').text('keine Angaben');      }    window.location.reload();     };hi();">Cookies-Einstellung ändern</p>
+		
