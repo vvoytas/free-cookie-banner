@@ -16,6 +16,8 @@ It check and block or allow also the third part content such as sozial networks 
 Put the script free-cookie-banner.js in a header of Your HTML page
 
 <link rel="stylesheet" type="text/css" href="free-cookie-banner.css">
+
+<!-- optional Bootstrap -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
