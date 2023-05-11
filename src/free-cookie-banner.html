@@ -1,94 +1,231 @@
-		<div id="cookieConsentContainer" style="visibility:hidden;" class="cookieConsentContainer">
-		  <div id="cookieMaske" style="visibility:hidden;" class="frame frame-well frame-type-html frame-layout-0 frame-space-before-none frame-space-after-none text-center">
-			<div class="row">
-			  <div class="col-12 col-sm-12 col-md-12 col-lg-12  col-xl-12">
-			  <h6>We use cookies</h6>      
-			  </div>
-			</div>
-
-			<div class="row">
-			  <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
-			  <a href="http://contoso.com">more info</a>      
-			  </div>
-			</div>    
-			
-			<div class="row">
-			  
-			  <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
-			  <div class="row">
-				<div class="col-6 col-sm-6 col-md-6 col-lg-6  col-xl-6">
-				<button id="btnDecline" type="button" class="btn btn-primary" style="width:100%;" >only essential</button>
-				</div>
-				
-				<div class="col-6 col-sm-6 col-md-6 col-lg-6  col-xl-6">
-				<button id="btnAgree" type="button" class="btn btn-danger" style="width:100%;" >accept all</button>
-				</div>          
-				
-			  </div>      
-			  </div>
-
-
-			</div> 
-			<div class="row">
-			  <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
-			  <button id="btnDetails" type="button" class="btn btn-link">cookie details</button>      
-			  </div>
-			</div>
-			
-			
-			
-		  </div>
-		  <div id="cookieListe" style="visibility:hidden;" class="frame frame-well frame-type-html frame-layout-0 frame-space-before-none frame-space-after-none text-left">
-			
-		<div class='table-responsive text-left ' style="overflow-y: scroll; height:400px; max-height: 100vh;">
-		<table class='table table-striped text-left'>
-
-		<tr><td><b>Essential cookies</b></td><td></td></tr>
-		<tr><td>Name</td><td>cookie_erlauben</td></tr>
-		<tr><td>Provider</td><td>Will not transferred to other providers</td></tr>
-		<tr><td>Purpose</td><td>Login cookie - save the choice of visitor.</td></tr>
-		<tr><td>Privacy policies</td><td>https://contoso.com/privacy-policies/</td></tr>
-		<tr><td>Host(s)</td><td>contoso.com</td></tr>
-		<tr><td>Cookie Name</td><td>cookie_erlauben</td></tr>
-		<tr><td>Cookie lifetime</td><td>1 day</td></tr>
-
-		<tr><td>Name</td><td>fe_typo_user</td></tr>
-		<tr><td>Provider</td><td>Will not transferred to other providers</td></tr>
-		<tr><td>Purpose</td><td>Login cookie - save the user log-in id.</td></tr>
-		<tr><td>Privacy policies</td><td>https://contoso.com/privacy-policies/</td></tr>
-		<tr><td>Host(s)</td><td>contoso.com</td></tr>
-		<tr><td>Cookie Name</td><td>fe_typo_user</td></tr>
-		<tr><td>Cookie lifetime</td><td>30 days</td></tr>
-
-		<tr><td>Name</td><td>PHPSESSID</td></tr>
-		<tr><td>Provider</td><td>Will not transferred to other providers</td></tr>
-		<tr><td>Purpose</td><td>Used for settings og other cookies</td></tr>
-		<tr><td>Privacy policies</td><td>https://contoso.com/privacy-policies/</td></tr>
-		<tr><td>Cookie Name</td><td>PHPSESSID</td></tr>
-		<tr><td>Cookie lifetime</td><td>Browser session</td></tr>
-
-		<tr><td><b>Marketing Cookies</b></td><td></td></tr>
-		<tr><td>Name</td><td>Google Analytics</td></tr>
-		<tr><td>Provider</td><td>Google LLC</td></tr>
-		<tr><td>Purpose</td><td>Cookie of Google for website-analysing. Make a static data, how the visitor use a website.</td></tr>
-		<tr><td>Privacy policies</td><td>https://policies.google.com/privacy</td></tr>
-		<tr><td>Cookie Name</td><td>_ga,_gat,_gid</td></tr>
-		<tr><td>Cookie lifetime</td><td>2 years</td></tr>
-
-
-		<tr><td>Name</td><td>Facebook</td></tr>
-		<tr><td>Provider</td><td>Facebook</td></tr>
-		<tr><td>Purpose</td><td>Cookie of Facebook for website-analysing. Make a static data, how the visitor use a website.</td></tr>
-		<tr><td>Privacy policies</td><td>https://www.facebook.com/policies</td></tr>
-		<tr><td>Cookie Name</td><td>_fb*</td></tr>
-		<tr><td>Cookie lifetime</td><td>2 years</td></tr>
-
-		</table>
-		</div>    
-    
-    <div id="listeCookies">
-      
-    </div>
-    <button id="btnBackToCookieMaske" type="button" class="btn btn-primary">back</button>
-  </div>
+<div id="cookieConsentContainer" style="visibility:hidden;" class="cookieConsentContainer">
+   <div id="cookieMaske" style="visibility:hidden;" class="frame frame-well frame-type-html frame-layout-0 frame-space-before-none frame-space-after-none text-center">
+      <div class="row">
+         <div class="col-12 col-sm-12 col-md-12 col-lg-12  col-xl-12">
+            <h3>Wir verwenden Cookies</h3>
+         </div>
+      </div>
+      <div class="row">
+         <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+            <div class="form-inline">
+               <div class="form-group">
+                  <button id="btnAgree" type="button" class="btn btn-primary btn-md"    >Akzeptieren</button>
+                  <button id="btnSettings" type="button" class="btn btn-default btn-md">Einstellen</button>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="row" style="visibility:hidden;height:0px;padding:0px;margin:0px;">
+         <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12" style="visibility:hidden;height:0px;padding:0px;margin:0px;">
+            <a href="http://youtsite.de/index.php?id=64" style="visibility:hidden;height:0px;padding:0px;margin:0px;">mehr info</a>      
+         </div>
+      </div>
+      <div class="row">
+         <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+            <div class="cookieText text-left" >
+               Auf unserer Webseite benutzen wir Cookies und ähnliche Technologien, die für das Funktionieren der Webseite erforderlich sind.
+               Ohne diese Cookies ist eine Nutzung und Betrieb unserer Webseite nicht möglich. Rechtsgrundlage für diese Cookies ist Art.6 Abs.1 f. DSGVO.
+               Wir benutzen daneben, aber nur mit Ihrer Zustimmung, optionale Cookies zur Analyse der Nutzung unserer Webseiten.
+               Rechtsgrundlage für die Nutzung dieser Cookies wäre Ihre Einwilligung nach Art.6 Abs.1 a. DSGVO. Diese Cookies ermöglichen uns, Probleme bei der Bedienung und Nutzung der Webseite zu erkennen und zu beheben.
+               Wir nutzen auch Cookies für die Durchführung von Marketing, damit wir den Erfolg von Marketing-Maßnahmen bewerten und die Inhalte in Bezug auf Nutzer personalisieren können.
+               Im Rahmen der Nutzung solcher zusätzlicher Cookies kann es dazu kommen, dass Daten auch in Länder außerhalb der Europäischen Union übermittelt und verarbeitet werden, deren Datenschutzniveau nicht dem europäischen Standard entspricht.
+               Sie können die Nutzung solcher optionalen Cookies ohne weiteres verweigern und bei einer Zustimmung jederzeit Ihre Zustimmung zurücknehmen.
+               Detailinformationen zu den einzelnen Cookies sowie des Verarbeitungsortes finden Sie in unseren <a href="https://youtsite.de/Datenschutz"><b>Datenschutzinformationen</b></a>.
+               Unser <a href="https://youtsite.de/Impressum"><b>Impressum</b></a> erreichen Sie mit einem Klick auf den Link. Unter „Einstellungen“ können Sie weitere Einstellungen oder auch eine Ablehnung von Cookies vornehmen.    
+            </div>
+         </div>
+      </div>
+      <div class="row">
+         <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+            <button id="btnDetails" type="button" class="btn btn-link" style="visibility:hidden;height:0px;">Cookie details</button>      
+         </div>
+      </div>
+      <div class="row">
+         <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 text-right">
+            <a href="http://youtsite.de/index.php?id=63">Impressum</a>      
+         </div>
+         <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 text-left">
+            <a href="http://youtsite.de/index.php?id=64">Datenschutz</a>      
+         </div>
+      </div>
+   </div>
+   <div id="cookieListe" style="visibility:hidden;" class="frame frame-well frame-type-html frame-layout-0 frame-space-before-none frame-space-after-none text-left">
+      <h3><b>Essenzielle Cookies</b></h3>
+      <div class='table-responsive text-left ' style="overflow-y: scroll; height:220px; max-height: 100vh;">
+         <table class='table table-striped text-left'>
+            <tr>
+               <td>Name</td>
+               <td>cookie_erlauben</td>
+            </tr>
+            <tr>
+               <td>Anbieter</td>
+               <td>Keine Übermittlung an Drittanbieter</td>
+            </tr>
+            <tr>
+               <td>Zweck</td>
+               <td>Login Cookie - Merkt sich Cookie Einstellung der Besucher.</td>
+            </tr>
+            <tr>
+               <td>Datenschutzerklärung</td>
+               <td>https://youtsite.de/impressum-datenschutz/datenschutz/</td>
+            </tr>
+            <tr>
+               <td>Host(s)</td>
+               <td>youtsite.de</td>
+            </tr>
+            <tr>
+               <td>Cookie Name</td>
+               <td>cookie_erlauben</td>
+            </tr>
+            <tr>
+               <td>Cookie Laufzeit</td>
+               <td>1 Tag</td>
+            </tr>
+            <tr>
+               <td>Name</td>
+               <td>fe_typo_user</td>
+            </tr>
+            <tr>
+               <td>Anbieter</td>
+               <td>Keine Übermittlung an Drittanbieter</td>
+            </tr>
+            <tr>
+               <td>Zweck</td>
+               <td>Login Cookie - Merkt sich einen Kunden/Nutzer-Login.</td>
+            </tr>
+            <tr>
+               <td>Datenschutzerklärung</td>
+               <td>https://youtsite.de/impressum-datenschutz/datenschutz/</td>
+            </tr>
+            <tr>
+               <td>Host(s)</td>
+               <td>youtsite.de</td>
+            </tr>
+            <tr>
+               <td>Cookie Name</td>
+               <td>fe_typo_user</td>
+            </tr>
+            <tr>
+               <td>Cookie Laufzeit</td>
+               <td>30 Tage</td>
+            </tr>
+            <tr>
+               <td>Name</td>
+               <td>PHPSESSID</td>
+            </tr>
+            <tr>
+               <td>Anbieter</td>
+               <td>Keine Übermittlung an Drittanbieter</td>
+            </tr>
+            <tr>
+               <td>Zweck</td>
+               <td>Dient der Verwaltung anderer Cookies, hat insoweit keine eigene Funktion.</td>
+            </tr>
+            <tr>
+               <td>Datenschutzerklärung</td>
+               <td>https://youtsite.de/impressum-datenschutz/datenschutz/</td>
+            </tr>
+            <tr>
+               <td>Cookie Name</td>
+               <td>PHPSESSID</td>
+            </tr>
+            <tr>
+               <td>Cookie Laufzeit</td>
+               <td>Browsersitzung (Session)</td>
+            </tr>
+            <tr>
+               <td>Name</td>
+               <td>apemplconsrandomNumber</td>
+            </tr>
+            <tr>
+               <td>Anbieter</td>
+               <td>Keine Übermittlung an Drittanbieter</td>
+            </tr>
+            <tr>
+               <td>Zweck</td>
+               <td>Zeigt zufälliges Mitarbeiter-Foto sowie die Kontaktdaten.</td>
+            </tr>
+            <tr>
+               <td>Datenschutzerklärung</td>
+               <td>https://youtsite.de/impressum-datenschutz/datenschutz/</td>
+            </tr>
+            <tr>
+               <td>Cookie Name</td>
+               <td>apemplconsrandomNumber</td>
+            </tr>
+            <tr>
+               <td>Cookie Laufzeit</td>
+               <td>7 Tage</td>
+            </tr>
+            <tr>
+               <td><b>Marketing Cookies</b></td>
+               <td></td>
+            </tr>
+            <tr>
+               <td>Name</td>
+               <td>Google Analytics</td>
+            </tr>
+            <tr>
+               <td>Anbieter</td>
+               <td>Google LLC</td>
+            </tr>
+            <tr>
+               <td>Zweck</td>
+               <td>Cookie von Google für Website-Analysen. Erzeugt statistische Daten darüber, wie der Besucher die Website nutzt.</td>
+            </tr>
+            <tr>
+               <td>Datenschutzerklärung</td>
+               <td>https://policies.google.com/privacy</td>
+            </tr>
+            <tr>
+               <td>Cookie Name</td>
+               <td>_ga,_gat,_gid,_gcl_au</td>
+            </tr>
+            <tr>
+               <td>Cookie Laufzeit</td>
+               <td>2 Jahre</td>
+            </tr>
+            <tr>
+               <td>Name</td>
+               <td>Facebook</td>
+            </tr>
+            <tr>
+               <td>Anbieter</td>
+               <td>Facebook</td>
+            </tr>
+            <tr>
+               <td>Zweck</td>
+               <td>Cookie von Facebook für Website-Analysen. Erzeugt statistische Daten darüber, wie der Besucher die Website nutzt.</td>
+            </tr>
+            <tr>
+               <td>Datenschutzerklärung</td>
+               <td>https://www.facebook.com/policies</td>
+            </tr>
+            <tr>
+               <td>Cookie Name</td>
+               <td>_fb*</td>
+            </tr>
+            <tr>
+               <td>Cookie Laufzeit</td>
+               <td>2 Jahre</td>
+            </tr>
+         </table>
+      </div>
+      <div id="listeCookies">
+      </div>
+      <div class="row text-center">
+         <button id="btnBackToCookieMaske" type="button" class="btn btn-danger btn-lg">zurück</button>
+      </div>
+   </div>
+</div>
+<div id="cookieSettings" style="visibility:hidden;" class="frame frame-well frame-type-html frame-layout-0 frame-space-before-none frame-space-after-none text-center">
+   <h6>Cookie-Einstellungen:</h6>
+   <h6>Notwendige Cookies</h6>
+   <p>
+      <input type="checkbox" checked disabled="disabled">
+      Ohne diese Cookies kann die Webseite nicht richtig funktionieren. <br/>Sie sind normalerweise aktiviert und können nicht deaktiviert werden.
+   </p>
+   <button id="btnDecline" type="button" class="btn btn-default btn-md"  >Alle restlichen Cookies ablehnen</button>
+   &nbsp;
+   <button id="btnSettingsBackToCookieMaske" type="button" class="btn btn-danger btn-md">&nbsp;Zurück</button>
 </div>
